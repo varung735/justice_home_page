@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat";
+}
+
+body{
+  height: 100vh;
+  background-color: #333637;
+  color: #fff;
+}
+
+/* ------------------------------ */
+/* ---------- NAVBAR ------------ */
+/* ------------------------------ */
+
+.navbar{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 2%;
+}
+
+.logo{
+  height: 50px;
+  width: 120px;
+}
+
+.list{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+  gap: 50px;
+}
+
+.list-item{
+  list-style: none;
+  color: #c9c9c9;
+}
+
+.list :first-child{
+  color: #fff;
+}
+
+.button-small{
+  height: 40px;
+  width: 150px;
+  border: 2px solid khaki;
+  border-radius: 5px;
+  background: none;
+  color: khaki;
+  font-weight: bolder;
+}
+
+/* ------------------------------ */
+/* ---------- HERO ------------ */
+/* ------------------------------ */
+
+.hero{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.bottom{
+  height: 50%;
+  display: flex;
+  flex-direction: row;
+  background-image: url('assets/justice.jpg');
+}
+
+.button-large-prev{
+  height: 50px;
+  width: 50px;
+  background-color: #0d0d0d;
+}
+
+.button-large-next{
+  height: 50px;
+  width: 50px;
+  background-color: khaki;
+}
