@@ -6,9 +6,18 @@
 }
 
 body{
-  height: 100vh;
-  background-color: #333637;
+  background: url('./assets/justice.jpg');
+  background-size: cover;
+  background-position: 0 -100px;
+  background-repeat: no-repeat;
+  /* background-color: #333637; */
   color: #fff;
+}
+
+.container{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 /* ------------------------------ */
@@ -19,11 +28,27 @@ body{
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  margin-top: 2%;
+  align-items: center;
+  background-color: #333637;
+  padding-top: 1%; 
+}
+
+.nav-logo{
+  justify-self: flex-start;
+}
+
+.nav-list{
+  order: 1;
+  justify-self: flex-end;
+}
+
+.nav-button{
+  order: 2;
+  justify-self: flex-end;
 }
 
 .logo{
-  height: 50px;
+  height: 60px;
   width: 120px;
 }
 
@@ -31,7 +56,6 @@ body{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-content: center;
   gap: 50px;
 }
 
@@ -59,26 +83,41 @@ body{
 /* ------------------------------ */
 
 .hero{
+  height: 93vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
+}
+
+.hero-desc{
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  background-color: #333637; 
+}
+
+.hero-heading{
+  margin: 3% 7%;
+  font-size: 4.568rem;
+}
+
+.hero-body{
+  margin: 3% 5%;
 }
 
 .bottom{
-  height: 50%;
-  display: flex;
-  flex-direction: row;
-  background-image: url('assets/justice.jpg');
+  display: inline-block;
+  background-color: #333637; 
 }
 
 .button-large-prev{
-  height: 50px;
-  width: 50px;
+  height: 70px;
+  width: 70px;
   background-color: #0d0d0d;
+
 }
 
 .button-large-next{
-  height: 50px;
-  width: 50px;
+  height: 70px;
+  width: 70px;
   background-color: khaki;
 }
