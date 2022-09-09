@@ -48,7 +48,7 @@ body{
 }
 
 .logo{
-  height: 60px;
+  height: 50px;
   width: 120px;
 }
 
@@ -105,14 +105,22 @@ body{
 }
 
 .bottom{
-  display: inline-block;
+  display: flex;
+  justify-content: end;
   background-color: #333637; 
+}
+
+div.bottom > div{
+  display: flex;
 }
 
 .button-large-prev{
   height: 70px;
   width: 70px;
   background-color: #0d0d0d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
 }
 
@@ -120,4 +128,7 @@ body{
   height: 70px;
   width: 70px;
   background-color: khaki;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
